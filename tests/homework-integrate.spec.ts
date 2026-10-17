@@ -38,7 +38,7 @@ test('Homework: Integration Test with Stub and Driver', async ({ browser }) => {
         <body>
           <h1>Stub Cart Page</h1>
           <div class="cart_list" data-test="cart-stub-info">
-            <span class="user-owner">นริศรา นาแพร่</span>
+            <span class="user-owner">สิริมาศ แซ่โค้ว</span>
             <div class="inventory_item_name">Sauce Labs Backpack</div>
           </div>
         </body>
@@ -47,7 +47,7 @@ test('Homework: Integration Test with Stub and Driver', async ({ browser }) => {
 
     // เขียน Assert ตรวจสอบว่ามีชื่อ-นามสกุลอยู่ใน Stub จริงหรือไม่
     await expect(page.locator('[data-test="cart-stub-info"] .user-owner'))
-      .toHaveText('นริศรา นาแพร่');
+      .toHaveText('สิริมาศ แซ่โค้ว');
 
     // ตรวจสอบข้อมูลสินค้าใน Stub
     await expect(page.locator('.inventory_item_name'))
